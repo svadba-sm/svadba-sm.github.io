@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Свадьба Сендера и Малки · 28.12.2026</title>
+<meta name="description" content="Приглашение на свадьбу Сендера и Малки · 28.12.2026 · Нес-Циона">
+<meta property="og:title" content="Свадьба Сендера и Малки · 28.12.2026">
+<meta property="og:description" content="Приглашение и подтверждение участия">
+<meta property="og:image" content="poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: tender, formal, festive
+   IDEA: the invitation card itself, continued below as matching paper cards
+   PICTURE: the animated invitation (the family's own video), then the RSVP card
+   COLOUR and TYPE: blush paper ground, invitation green text, sage buttons, gold hairlines; Cormorant + Lora
+   LAYOUT: one centred column, max 560px */
+:root{
+  --paper:#ecdfd5; --paper2:#e4d6cb; --card:#fbf7f1;
+  --green:#3d4a33; --green2:#55603f; --sage:#7f8767; --sage-d:#6c7356; --sage-l:#a9ad92;
+  --gold:#b8945f; --line:rgba(127,135,103,.38);
+  color-scheme:light;
+}
+*{ box-sizing:border-box; min-width:0; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; min-height:100vh; background:linear-gradient(180deg,#e3d8d0,var(--paper) 40%,var(--paper2)); color:var(--green);
+  font:16px/1.55 "Lora",Georgia,serif; -webkit-tap-highlight-color:transparent; overflow-x:clip;
+  padding-bottom:env(safe-area-inset-bottom,0px); }
+[hidden]{ display:none !important; }
+
+/* ---------- hero ---------- */
+.hero{ position:relative; width:min(100vw,560px); margin:0 auto; aspect-ratio:1080/1598; overflow:hidden;
+  -webkit-mask-image:linear-gradient(#000 92%,transparent); mask-image:linear-gradient(#000 92%,transparent); }
+@media (min-width:561px){ .hero{ -webkit-mask-image:linear-gradient(#000 92%,transparent),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); -webkit-mask-composite:source-in; mask-image:linear-gradient(#000 92%,transparent),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); mask-composite:intersect; } }
+.hero video,.hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.hero img{ opacity:0; transition:opacity .5s ease; }
+.hero.end img{ opacity:1; }
+.tap{ position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:center; padding-bottom:14%; border:0; background:transparent; cursor:pointer; font:inherit; }
+.tap span{ background:rgba(61,74,51,.82); color:#fbf7f1; font-size:16px; padding:11px 24px; border-radius:999px; box-shadow:0 10px 24px -10px rgba(40,45,30,.6); }
+.music{ position:fixed; z-index:20; top:calc(12px + env(safe-area-inset-top,0px)); right:12px; display:flex; align-items:center; gap:8px; font:inherit; font-size:14px;
+  color:var(--green); background:rgba(251,247,241,.88); border:1px solid var(--line); border-radius:999px; padding:8px 14px 8px 10px; cursor:pointer;
+  -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); box-shadow:0 6px 16px -10px rgba(60,55,40,.5); }
+.music svg{ width:18px; height:18px; color:var(--green2); }
+.music{ padding:0 12px; height:44px; }
+.music .bars{ display:none; } .music.on .bars{ display:inline-flex; align-items:flex-end; }
+.music .bars i{ display:inline-block; width:3px; margin-right:2px; height:12px; background:var(--sage); border-radius:2px; transform-origin:bottom; transform:scaleY(.35); }
+.music.on .bars i{ animation:eq 1s ease-in-out infinite; } .music.on .bars i:nth-child(2){ animation-delay:.2s; } .music.on .bars i:nth-child(3){ animation-delay:.4s; }
+@keyframes eq{ 50%{ transform:scaleY(1); } }
+.skip{ position:fixed; z-index:20; left:12px; bottom:calc(14px + env(safe-area-inset-bottom,0px)); font:inherit; font-size:14px; color:var(--green); background:rgba(251,247,241,.85); border:1px solid var(--line); border-radius:999px; padding:7px 16px; cursor:pointer; transition:opacity .5s; }
+
+/* ---------- sections ---------- */
+.after{ display:flex; flex-direction:column; align-items:center; gap:22px; padding:4px 14px 40px; transition:opacity 1s ease, transform 1s ease; }
+.after.wait{ opacity:0; transform:translateY(14px); }
+.sec{ width:min(100%,532px); background:var(--card); border:1px solid rgba(127,135,103,.35); border-radius:6px; padding:30px 22px 28px; text-align:center; position:relative;
+  box-shadow:0 22px 44px -28px rgba(70,70,50,.45); }
+.sec::before{ content:""; position:absolute; inset:6px; border:1px solid rgba(184,148,95,.28); border-radius:3px; pointer-events:none; }
+.sec h2{ font-family:"Cormorant Garamond",Georgia,serif; font-weight:700; font-size:31px; line-height:1.1; color:var(--green2); margin:0 0 6px; text-wrap:balance; }
+.sub{ font-size:15.5px; line-height:1.55; color:var(--green); margin:0; opacity:.85; }
+.orn{ display:block; width:120px; height:12px; margin:12px auto 18px; }
+.q{ font-family:"Cormorant Garamond",Georgia,serif; font-weight:700; font-size:22px; color:var(--green); margin:22px 0 10px; }
+.q.first{ margin-top:2px; }
+.seg{ display:flex; gap:10px; }
+.seg button{ flex:1; min-height:46px; font:inherit; font-size:15.5px; padding:10px 8px; border-radius:999px; border:1px solid rgba(85,96,63,.45); background:#fff; color:var(--green); cursor:pointer; transition:background .25s,color .25s,border-color .25s; }
+.seg button[aria-pressed="true"]{ background:var(--sage-d); border-color:var(--sage-d); color:#fbf7f1; }
+.guests{ display:grid; gap:10px; }
+.row{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 12px 10px 18px; border:1px solid var(--line); border-radius:14px; background:#fff; }
+.req{ color:#a44a35; }
+.reqnote{ font-size:14px; margin:8px 0 0; color:var(--green); opacity:.85; }
+.hintq{ font-size:14px; margin:-4px 0 12px; opacity:.8; }
+.guests.bad .row{ border-color:#b4553f; box-shadow:0 0 0 3px rgba(180,85,63,.12); }
+.seg.bad button{ border-color:#b4553f; }
+.row .lbl{ font-size:17px; text-align:left; color:var(--green); }
+.row .lbl small{ display:block; font-size:13px; opacity:.7; }
+.step{ display:flex; align-items:center; gap:4px; }
+.step button{ width:44px; height:44px; border-radius:50%; border:1px solid rgba(85,96,63,.45); background:transparent; color:var(--green2); font-size:22px; line-height:1; cursor:pointer; display:grid; place-items:center; padding:0; }
+.step button:disabled{ opacity:.3; cursor:default; }
+.step output{ min-width:34px; text-align:center; font-family:"Cormorant Garamond",Georgia,serif; font-weight:700; font-size:27px; color:var(--green); }
+.fields{ display:grid; gap:12px; text-align:left; }
+.fields label{ display:block; font-size:14px; color:var(--green); opacity:.85; margin:0 0 5px 4px; }
+.fields input{ width:100%; font:inherit; font-size:16.5px; color:var(--green); padding:13px 16px; border-radius:14px; border:1px solid rgba(85,96,63,.4); background:#fff; outline:none; transition:border-color .2s, box-shadow .2s; }
+.fields input::placeholder{ color:rgba(61,74,51,.42); }
+.fields input:focus{ border-color:var(--sage); box-shadow:0 0 0 3px rgba(127,135,103,.22); }
+.fields input.bad{ border-color:#b4553f; box-shadow:0 0 0 3px rgba(180,85,63,.14); }
+.two{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+@media (max-width:370px){ .two{ grid-template-columns:1fr; } }
+.err{ color:#a44a35; font-size:14px; min-height:21px; margin:12px 0 2px; }
+.cta{ display:flex; align-items:center; justify-content:center; gap:10px; width:100%; min-height:52px; font:inherit; font-size:17px; font-weight:500; text-decoration:none;
+  padding:13px 18px; border-radius:999px; border:0; cursor:pointer; color:#fbf7f1;
+  background:linear-gradient(180deg,#8c9373,#6f7657); box-shadow:0 10px 22px -12px rgba(60,70,45,.75), inset 0 1px 0 rgba(255,255,240,.35); }
+.cta:active{ transform:translateY(1px); }
+.cta:disabled{ opacity:.7; }
+.cta.ghost{ background:transparent; color:var(--green2); border:1px solid rgba(85,96,63,.5); box-shadow:none; }
+.cta svg{ width:22px; height:22px; flex:none; }
+.nav{ display:grid; gap:10px; margin-top:18px; }
+.addr{ font-size:16.5px; line-height:1.6; color:var(--green); }
+.addr b{ font-family:"Cormorant Garamond",Georgia,serif; font-size:25px; font-weight:700; color:var(--green2); display:block; margin-bottom:2px; }
+.time{ margin-top:10px; font-size:15px; color:var(--green); opacity:.85; }
+.phone{ font-family:"Cormorant Garamond",Georgia,serif; font-weight:700; font-size:31px; color:var(--green2); letter-spacing:.04em; margin:6px 0 14px; white-space:nowrap; }
+.thanks{ display:none; } .done .form{ display:none; } .done .thanks{ display:block; }
+.thanks p{ font-size:17px; line-height:1.6; margin:0 0 16px; }
+.again{ margin-top:6px; }
+.toast{ position:fixed; left:50%; bottom:calc(24px + env(safe-area-inset-bottom,0px)); transform:translate(-50%,20px); background:var(--green); color:#fbf7f1; font-size:15px; padding:10px 20px; border-radius:999px; opacity:0; transition:.35s; z-index:40; pointer-events:none; }
+.toast.on{ opacity:1; transform:translate(-50%,0); }
+.replay{ font:inherit; font-size:15px; color:var(--green); background:transparent; border:1px solid var(--line); border-radius:999px; padding:9px 22px; cursor:pointer; }
+button:focus-visible,a:focus-visible,input:focus-visible{ outline:2px solid var(--sage-d); outline-offset:3px; }
+@media (prefers-reduced-motion:reduce){ .after,.hero img{ transition:none; } }
+</style>
+</head>
+<body>
+
+<div class="hero" id="hero">
+  <video id="vid" src="intro.mp4" poster="poster.jpg" muted playsinline webkit-playsinline preload="auto" aria-label="Приглашение на свадьбу Сендера и Малки, 28.12.2026, 18 Тевета 5787"></video>
+  <img id="still" src="still.jpg" alt="Приглашение на свадьбу Сендера и Малки. Понедельник, 28.12.2026, 18 Тевета 5787. Зал торжеств «Габриэль», ул. Ха-Спорт, 4, перекрёсток Бейт-Овед, Нес-Циона, Израиль. Сбор гостей 17:00, хупа 18:30. Родители жениха: Рав Залман и Эйдель Гуревич, Виллербан, Франция. Родители невесты: Рав Бенци и Лея Липскер, С-Петербург, Россия.">
+  <button class="tap" id="tap" hidden><span>Нажмите, чтобы открыть</span></button>
+</div>
+
+<button class="music" id="music" aria-pressed="false" aria-label="Включить музыку"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 18.5a3 3 0 1 1-2-2.83V5.5l12-2.5v12.5a3 3 0 1 1-2-2.83V7.4L9 9.05v9.45Z"/></svg><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+<audio id="aud" src="music.mp3" preload="none" loop></audio>
+<button class="skip" id="skip">Пропустить</button>
+
+<main class="after wait" id="after">
+
+  <section class="sec" id="rsvp" aria-labelledby="rsvp-h">
+    <h2 id="rsvp-h">Подтверждение участия</h2>
+    <p class="sub">Пожалуйста, сообщите нам, придёте ли&nbsp;Вы</p>
+    <p class="reqnote"><span class="req">*</span> Все поля обязательны для заполнения</p>
+    <svg class="orn" viewBox="0 0 160 12" aria-hidden="true"><line x1="0" y1="6" x2="68" y2="6" stroke="#b8945f" stroke-width=".7"/><line x1="92" y1="6" x2="160" y2="6" stroke="#b8945f" stroke-width=".7"/><path d="M80,0.5 C81.5,3 83.5,4.6 86,6 C83.5,7.4 81.5,9 80,11.5 C78.5,9 76.5,7.4 74,6 C76.5,4.6 78.5,3 80,0.5 Z" fill="#b8945f"/></svg>
+
+    <div class="form">
+      <div class="q first" id="q-come">Вы придёте? <span class="req">*</span></div>
+      <div class="seg" role="group" aria-labelledby="q-come">
+        <button type="button" id="yes" aria-pressed="false">Да, с радостью</button>
+        <button type="button" id="no" aria-pressed="false">К сожалению, нет</button>
+      </div>
+
+      <div id="howmany">
+        <div class="q">Сколько человек придёт? <span class="req">*</span></div>
+        <p class="hintq">Обязательно укажите количество мужчин и женщин</p>
+        <div class="guests">
+          <div class="row">
+            <div class="lbl" id="l-men">Мужчины<small>включая мальчиков</small></div>
+            <div class="step"><button type="button" data-k="men" data-d="-1" aria-label="Меньше мужчин">−</button><output id="men" aria-labelledby="l-men">0</output><button type="button" data-k="men" data-d="1" aria-label="Больше мужчин">+</button></div>
+          </div>
+          <div class="row">
+            <div class="lbl" id="l-women">Женщины<small>включая девочек</small></div>
+            <div class="step"><button type="button" data-k="women" data-d="-1" aria-label="Меньше женщин">−</button><output id="women" aria-labelledby="l-women">0</output><button type="button" data-k="women" data-d="1" aria-label="Больше женщин">+</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="q">Ваши данные</div>
+      <div class="fields">
+        <div class="two">
+          <div><label for="fn">Имя <span class="req">*</span></label><input id="fn" required aria-required="true" autocomplete="given-name" placeholder="Имя"></div>
+          <div><label for="ln">Фамилия <span class="req">*</span></label><input id="ln" required aria-required="true" autocomplete="family-name" placeholder="Фамилия"></div>
+        </div>
+        <div><label for="ph">Номер телефона <span class="req">*</span></label><input id="ph" required aria-required="true" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 000-00-00"></div>
+      </div>
+
+      <p class="err" id="err" role="alert"></p>
+      <button type="button" class="cta" id="send"><span id="sendl">Отправить ответ</span></button>
+    </div>
+
+    <div class="thanks">
+      <p id="thx">Спасибо! Мы получили Ваш ответ.</p>
+      <a class="cta" id="wa" hidden target="_blank" rel="noopener">Отправить в WhatsApp</a>
+      <button type="button" class="cta ghost again" id="again">Изменить ответ</button>
+    </div>
+  </section>
+
+  <section class="sec" id="place" aria-labelledby="place-h">
+    <h2 id="place-h">Как добраться</h2>
+    <svg class="orn" viewBox="0 0 160 12" aria-hidden="true"><line x1="0" y1="6" x2="68" y2="6" stroke="#b8945f" stroke-width=".7"/><line x1="92" y1="6" x2="160" y2="6" stroke="#b8945f" stroke-width=".7"/><path d="M80,0.5 C81.5,3 83.5,4.6 86,6 C83.5,7.4 81.5,9 80,11.5 C78.5,9 76.5,7.4 74,6 C76.5,4.6 78.5,3 80,0.5 Z" fill="#b8945f"/></svg>
+    <div class="addr"><b>Зал торжеств «Габриэль»</b>ул. Ха-Спорт, 4, <span style="white-space:nowrap">перекрёсток Бейт-Овед</span><br>Нес-Циона, Израиль</div>
+    <div class="time">Понедельник, 28.12.2026<br>Сбор гостей 17:00 · Хупа 18:30</div>
+    <div class="nav">
+      <a class="cta" id="waze" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 3c4.5 0 8 3.2 8 7.4 0 3.1-2 5.4-4.6 6.5a2 2 0 0 1-3.8 1.1h-2.2a2 2 0 0 1-3.9-.4A6.9 6.9 0 0 1 3 14.4c1.6-.4 2-1.1 2-3.4C5 6.5 8.5 3 13 3Zm0 1.8c-3.5 0-6.2 2.7-6.2 6.2 0 1.6-.2 3-1.1 3.9a5 5 0 0 0 2.3 1.4 2 2 0 0 1 3.4.9h2.2a2 2 0 0 1 3.3-1.1c2.3-.9 3.9-2.7 3.9-5.1 0-3.2-2.8-5.6-6.4-5.6Zm-2.4 3.3a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm4.6 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2Zm-5.6 4h1.4c.3 1 1.1 1.6 2.1 1.6s1.8-.6 2.1-1.6h1.4c-.4 1.8-1.8 3-3.5 3s-3.1-1.2-3.5-3Z"/></svg>
+        Открыть в Waze
+      </a>
+      <a class="cta ghost" id="gmaps" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        Открыть в Google Картах
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" id="gift" aria-labelledby="gift-h">
+    <h2 id="gift-h">Подарок молодым</h2>
+    <svg class="orn" viewBox="0 0 160 12" aria-hidden="true"><line x1="0" y1="6" x2="68" y2="6" stroke="#b8945f" stroke-width=".7"/><line x1="92" y1="6" x2="160" y2="6" stroke="#b8945f" stroke-width=".7"/><path d="M80,0.5 C81.5,3 83.5,4.6 86,6 C83.5,7.4 81.5,9 80,11.5 C78.5,9 76.5,7.4 74,6 C76.5,4.6 78.5,3 80,0.5 Z" fill="#b8945f"/></svg>
+    <p class="sub">Подарок для молодой пары можно отправить по&nbsp;номеру телефона:</p>
+    <div class="phone" id="giftphone"></div>
+    <div class="nav" style="margin-top:4px">
+      <a class="cta" id="giftlink" target="_blank" rel="noopener" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 7h-2.2A3 3 0 0 0 12 4.4 3 3 0 0 0 6.2 7H4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7h1a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1Zm-5-1.2a1.2 1.2 0 1 1 0 2.4h-2v-.2c0-1.2.9-2.2 2-2.2ZM9 5.8c1.1 0 2 1 2 2.2v.2H9a1.2 1.2 0 1 1 0-2.4ZM5 9h6v1.2H5Zm2 3h4v7H7Zm6 7v-7h4v7Zm6-8.8h-6V9h6Z"/></svg>
+        Сделать подарок
+      </a>
+      <button type="button" class="cta ghost" id="copy">Скопировать номер</button>
+    </div>
+  </section>
+
+  <button class="replay" id="replay">Смотреть приглашение снова</button>
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+{
+const CFG={
+  sheetUrl:'',                      // адрес Google Apps Script: ответы пишутся в Google-таблицу
+  rsvpWhatsApp:'79117828355',       // запасной вариант, пока таблица не подключена
+  giftPhone:'+7 911 782-83-55',
+  giftUrl:'https://alfaonline.org/public/mrv2/CitElccCir', // ссылка на банковский перевод
+  navQuery:'הספורט 4, נס ציונה'
+};
+const $=id=>document.getElementById(id);
+const vid=$('vid'), hero=$('hero'), after=$('after'), skip=$('skip'), tap=$('tap');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* intro */
+let ended=false;
+function finishIntro(){
+  if(ended) return; ended=true;
+  hero.classList.add('end'); after.classList.remove('wait'); skip.style.opacity='0'; skip.style.pointerEvents='none';
+  tap.hidden=true;
+}
+vid.addEventListener('ended',finishIntro);
+skip.addEventListener('click',()=>{ try{vid.pause();}catch(e){} finishIntro(); });
+function start(){
+  if(reduce){ finishIntro(); return; }
+  const p=vid.play();
+  if(p && p.catch) p.catch(()=>{ tap.hidden=false; });
+}
+tap.addEventListener('click',()=>{ tap.hidden=true; vid.play().catch(finishIntro); startMusic(); });
+$('replay').addEventListener('click',()=>{
+  ended=false; hero.classList.remove('end'); skip.style.opacity=''; skip.style.pointerEvents='';
+  scrollTo({top:0,behavior:'smooth'}); vid.currentTime=0; vid.play().catch(finishIntro);
+});
+if(document.readyState==='loading') addEventListener('DOMContentLoaded',start); else start();
+setTimeout(()=>{ if(!ended && vid.paused && tap.hidden) finishIntro(); },12000);
+
+/* music */
+const aud=$('aud'), mb=$('music');
+function setM(on){ mb.classList.toggle('on',on); mb.setAttribute('aria-pressed',on); mb.setAttribute('aria-label',on?'Выключить музыку':'Включить музыку'); }
+function startMusic(){ aud.play().then(()=>setM(true)).catch(()=>setM(false)); }
+mb.addEventListener('click',()=>{ if(aud.paused) startMusic(); else { aud.pause(); setM(false); } });
+
+/* navigation, gift */
+const q=encodeURIComponent(CFG.navQuery);
+$('waze').href='https://waze.com/ul?q='+q+'&navigate=yes';
+$('gmaps').href='https://www.google.com/maps/search/?api=1&query='+q;
+$('giftphone').textContent=CFG.giftPhone;
+if(CFG.giftUrl){ $('giftlink').href=CFG.giftUrl; $('giftlink').hidden=false; }
+const toast=m=>{ const t=$('toast'); t.textContent=m; t.classList.add('on'); clearTimeout(toast.t); toast.t=setTimeout(()=>t.classList.remove('on'),2200); };
+$('copy').addEventListener('click',async()=>{
+  const v=CFG.giftPhone.replace(/[^\d+]/g,'');
+  try{ await navigator.clipboard.writeText(v); toast('Номер скопирован'); }
+  catch(e){ const i=document.createElement('input'); i.value=v; document.body.appendChild(i); i.select();
+    try{ document.execCommand('copy'); toast('Номер скопирован'); }catch(_){ toast(v); } i.remove(); }
+});
+
+/* RSVP */
+let come=null; const n={men:0,women:0};
+function paint(){ for(const k in n) $(k).textContent=n[k];
+  document.querySelectorAll('.step button').forEach(b=>{ if(+b.dataset.d<0) b.disabled=n[b.dataset.k]<=0; }); }
+function setCome(v){ come=v; document.querySelector('.seg').classList.remove('bad'); $('yes').setAttribute('aria-pressed',v===true); $('no').setAttribute('aria-pressed',v===false); $('howmany').hidden=v===false; $('err').textContent=''; }
+$('yes').addEventListener('click',()=>setCome(true));
+$('no').addEventListener('click',()=>setCome(false));
+document.querySelectorAll('.step button').forEach(b=>b.addEventListener('click',()=>{
+  const k=b.dataset.k; n[k]=Math.max(0,Math.min(30,n[k]+(+b.dataset.d))); paint(); if(n.men+n.women>0){ document.querySelector('.guests').classList.remove('bad'); if(come!==true) setCome(true); } $('err').textContent=''; }));
+['fn','ln','ph'].forEach(id=>$(id).addEventListener('input',()=>$(id).classList.remove('bad')));
+paint();
+
+$('send').addEventListener('click',()=>{
+  const fn=$('fn').value.trim(), ln=$('ln').value.trim(), ph=$('ph').value.trim(), digits=ph.replace(/\D/g,'');
+  let msg=''; document.querySelectorAll('.bad').forEach(e=>e.classList.remove('bad'));
+  let focus=null;
+  if(come===null){ msg='Пожалуйста, отметьте, придёте ли Вы'; document.querySelector('.seg').classList.add('bad'); focus=$('q-come'); }
+  else if(come && n.men+n.women===0){ msg='Укажите, сколько мужчин и сколько женщин придёт'; document.querySelector('.guests').classList.add('bad'); focus=$('howmany'); }
+  if(digits.length<7){ $('ph').classList.add('bad'); msg=msg||'Укажите номер телефона'; }
+  if(!ln){ $('ln').classList.add('bad'); msg=msg||'Укажите фамилию'; }
+  if(!fn){ $('fn').classList.add('bad'); msg=msg||'Укажите имя'; }
+  if(msg){ const many=document.querySelectorAll('.bad').length>1; $('err').textContent=many?'Пожалуйста, заполните все обязательные поля':msg; if(focus) focus.scrollIntoView({behavior:'smooth',block:'center'}); return; }
+  const data={firstName:fn,lastName:ln,phone:ph,attending:come,men:come?n.men:0,women:come?n.women:0};
+  const thanks=()=>{
+    $('thx').textContent= come ? 'Спасибо, '+fn+'! Будем рады видеть Вас на нашем празднике.' : 'Спасибо, '+fn+', что сообщили нам.';
+    $('rsvp').classList.add('done'); $('rsvp').scrollIntoView({behavior:'smooth',block:'center'});
+  };
+  if(CFG.sheetUrl){
+    const b=$('send'); b.disabled=true; $('sendl').textContent='Отправляем…';
+    fetch(CFG.sheetUrl,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)})
+      .then(()=>{ $('wa').hidden=true; thanks(); })
+      .catch(()=>{ $('err').textContent='Не удалось отправить. Проверьте интернет и попробуйте ещё раз.'; })
+      .finally(()=>{ b.disabled=false; $('sendl').textContent='Отправить ответ'; });
+  } else {
+    const lines=['Свадьба Сендера и Малки — 28.12.2026','','Имя: '+fn+' '+ln,'Телефон: '+ph];
+    if(come) lines.push('Придём: да','Мужчин: '+n.men,'Женщин: '+n.women,'Всего: '+(n.men+n.women));
+    else lines.push('К сожалению, не сможем прийти');
+    $('wa').href='https://wa.me/'+CFG.rsvpWhatsApp+'?text='+encodeURIComponent(lines.join('\n'));
+    $('wa').hidden=false; $('thx').textContent='Осталось отправить ответ в WhatsApp:';
+    $('rsvp').classList.add('done');
+  }
+});
+$('again').addEventListener('click',()=>$('rsvp').classList.remove('done'));
+}
+</script>
+</body>
+</html>
